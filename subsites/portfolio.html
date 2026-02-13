@@ -4,78 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michtah: portfolio</title>
-
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
 
 <header>
-    <b>MICHTAH:</b> Portfolio
+    <nav>
+        <p><b>MICHTAH:</b> Portfolio</p>
+        <hr>
+        <p><a class="nav-link" href="../index.html">Back to main</a></p>
+    </nav>
 </header>
 <main>
-    <nav>
-        <a href="../index.html">Back to main</a>
-    </nav>
     <h1>Portfolio</h1>
-    <section id="hero">
-        <h2>Hello, I'm Michael.</h2>
-        <p><em>Computer Science</em> International Year One student at the University of York.</p>
-        <p>
-            I am interested in scientific, performant computation. I wish to write optimised code that can help us learn more about our world and our universe. I am interested in mathematics too.
-        </p>
+    <hr>
+    <section class="about">
+        <div class="about-stats">
+            <p class="about-name">
+                Michael Tahiroğlu
+            </p>
+            <p class="about-role">
+                CS IYO at University of York
+            </p>
+            <p class="about-statement">
+                <q>Computation for Mathematics</q>
+            </p>
+        </div>
     </section>
-    <section id="about">
+    <section class="information">
         <h2>About me</h2>
         <p>
-            I am a first-year computer science student learning the fundamentals of programming, web development, computer architecture, and databases. I am currently not looking for an internship, but I'd be happy to have one related to scientific computations.
+            Hello! I am Michael. I am studying as a first year student here at the University of York. I'm mainly interested in computation for mathematics and simulations. I like writing code that can help us understand more about our reality. Other than that, writing various tools for mathematics is another thing I like to do. 
+        </p>
+    </section>
+    <div class="view-buttons">
+        <a href="../index.html" target="_blank" tabindex="-1">
+            <button class="view-projects">
+                View my projects
+            </button>
+        </a>
+        <a href="https://github.com/michtah" target="_blank" tabindex="-1">
+            <button class="view-github">
+                View my GitHub
+            </button>
+        </a>
+    </div>
+    <section class="projects">
+        <h2>Projects</h2>
+        <p>These are some projects I worked on.</p>
+        <article>
+            <h3>River Simulation Tool</h3>
+            <p>
+                This tool uses the <em>pillow</em> image library of Python to take in an image, and calculate possible river paths from it using a modified hill-climbing method.
+            </p>
+            <p>
+                <strong>Tech: </strong>Python, Pillow
+            </p>
+            <p>
+                <strong>Challenges:</strong> tuning the river flow, the speed of the algorithm, accuracy.
+            </p>
+            <a class="project-link" href="/" target="_blank">
+                View Project
+            </a>
+        </article>
+        <hr>
+        <article>
+            <h3>Table Functions</h3>
+            <p>
+                This Python library provides functions to filter a table made with a list of dictionaries. It includes sorting, aggregation and filtering tools.
+            </p>
+            <p>
+                <strong>Tech:</strong> Python
+            </p>
+            <p>
+                <strong>Challenges:</strong> invalid input handling.
+            </p>
+            <a class="project-link" href="/" target="_blank">
+                View Project
+            </a>
+        </article>
+    </section>
+    <section class="diary">
+        <h2>Weekly Diary</h2>
+        <article>
+            <h3>Week 2 - Redesigning my Portfolio</h3>
+            <p class="diary-para">
+                This week, I rewrote my portfolio page from scratch. This was an interesting challenge as I have learned a lot of CSS between my previous attempt and this current attempt. I learned how to style pages, how to use the <code>rem</code> scaling, how to set background colors, and how to set the different states of links and buttons. I also learned how to make these cool floating sections, though this is not in the curriculum, I just thought they looked cool.
+            </p>
+            <p class="diary-para">
+                The big challenge was just getting things to look right. You have to set a lot of styling, even for such a small page, to get everything looking exactly how you want. It's quite difficult. Another thing was deciding how much detail to add in my profile. I don't want to add too much, as this is a public website, but I think this was a good middle ground.
+            </p>
+            <p class="diary-para">
+                I'd like to eventually come back and restyle/rewrite some parts of the page, or maybe integrate a different font, or include some images. For now though, I'm quite happy with it.
+            </p>
+        </article>
+    </section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <p>
+            Programming languages:
+        </p>
+        <ul class="skills-list">
+            <li><strong>Python:</strong> Used in class work as well as both programs in the projects section.</li>
+            <li><strong>C:</strong> I was in the Computer Science Olympiad of Turkey for two years, where they use C as the programming language.</li>
+            <li><strong>Java:</strong> Used in my OOP classes.</li>
+            <li><strong>APL:</strong> A hobby of mine, mainly used for terse, quick calculations.</li>
+            <li><strong>HTML/CSS:</strong> The website you're seeing is hand-made with HTML and CSS:</li>
+            <li><strong>SQL:</strong> I have built some databases before.</li>
+        </ul>
+        <p>
+            Spoken languages:
+        </p>
+        <ul class="skills-list">
+            <li><strong>Turkish:</strong> My native language.</li>
+            <li><strong>English:</strong> I have a C1 certification from Cambridge, as well as an 8.5 on my latest IELTS certification.</li>
+            <li><strong>German: </strong>I have some basic German knowledge from high school.</li>
+        </ul>
+        <p>
+            Tools: Git, GitHub, Visual Studio Code, Paint.NET
         </p>
         <p>
-            Outside of my studies, I am a big fan of mathematics of any kind, I am an artist, and I like making music as well. I often use my coding knowledge to help me with my music making.
+            Interests: Mathematics, Art, Writing, Music Production, Synthesizers
         </p>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <article>
-            <h3>River Generator</h3>
-            <p>
-                A little river generator program that uses <em>pillow</em> to calculate rivers from a given heightmap. Coded in python.
-            </p>
-            <ul>
-                <li><strong>Tech Stack: </strong>pillow, python</li>
-                <li><strong>Contrubution: </strong>I wrote the whole thing.</li>
-                <li><strong>Challenges: </strong>Tuning the river flow to match actual river paths.</li>
-                <li><a href="../index.html">Pretend there's a link here.</a></li>
-            </ul>
-        </article>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, C, Java, HTML, SQL</li>
-            <li><strong>Tools:</strong> Git, GitHub, VSCode, Paint.NET</li>
-            <li><strong>Interests:</strong> Programming, Mathematics, Art, Music, Writing</li>
-            <li><strong>Languages:</strong> Turkish, English, German (Starter)</li>
-        </ul>
-    </section>
-    <section id="prod-diary">
-        <h2>Production diary</h2>
-        <article>
-            <h3>Production Diary - Week 1</h3>
-            <p>Made on: <time datetime="2026-10-2">February 10th 2026</time></p>
-            <p>
-                Hello there! This is the first entry in my production diary. I hope you enjoy this little diary of what I made this week, and what I learned.
-            </p>
-            <p>
-                This week, I made this very website. It was an interesting experience. I added this portfolio as a link to my main page. I learned how to use the <code>header</code> and <code>nav</code> tools more effectively. It really taught me a lot. So far, my proudest achievement is the look of it. We haven't started learning CSS properly just yet, but I remember some things from when I was learning web development on my own in high school. I wanted to create a blog back then, so I took up web development and some CSS on the way. The hardest part was honestly organising the code itself. I really am not used to a language where you have to type in <em>everything</em> and you can't take off large indented chunks into another function. It's quite interesting. HTML organisation is hard. In terms of anything theoretical I learned, I think I'd say how webpages are organised and how their structure and presentation data is entirely separate. It's quite interesting. The same webpage with the same structure can be presented a billion different ways. I learned how to set an ID for each item in the webpage. Next week, I want to work on my other sub-site, and add an article to the large numbers blog.
-            <p>
-                On the other end, I also am trying to learn some assembly. Currently I'm learning NASM, as it appears to be the one we're focusing on in our classes. I've found a pretty good website to simulate running NASM. I don't know if I want to become proficient in assembly yet, however. We'll see.
-            </p>
-        </article>
-    </section>
-    <section id="contact">
-        <h2>Contact me:</h2>
-        <p>Don't.</p>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Location: York, United Kingdom</p>
+        <p class="contact-box"><a class="contact-link" href="https://gravatar.com/agiledelectablye48da15edf" target="_blank">Gravatar</a></p>
     </section>
 </main>
-
 </body>
 </html>
