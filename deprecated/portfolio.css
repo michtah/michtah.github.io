@@ -60,11 +60,6 @@ section {
     transition: 0.2s ease;
 }
 
-section:hover {
-    translate: 0 -0.2rem;
-    box-shadow: 0px 0.2rem 0.6rem rgba(0,0,0,0.2)
-}
-
 .about-name {
     margin-bottom: 0.5rem;
     font-weight: bold;
