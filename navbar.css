@@ -1,14 +1,13 @@
 nav {
     color: white;
-    background: #000000;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(74, 74, 74, 1) 71%, rgb(88, 88, 88) 76%, rgba(79, 79, 79, 1) 81%, rgba(41, 41, 41, 1) 99%);
     padding: 0.4rem;
     box-shadow: gold 0 0 0.2rem;
     border: 1px gray;
-    border-radius: 0.4rem;
-    
-    width: 60%;
-    margin: auto;
+    margin: 0 0 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .michtah {
