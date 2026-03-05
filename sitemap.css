@@ -1,4 +1,10 @@
+.folder {
+    color: #CCCCCC;
+    text-shadow: #CCCCCC 0 0 0.4rem;
+    font-style: italic;
+}
+
 li {
-    color: white;
-    text-shadow: white 0 0 0.4rem;
+    color: gold;
+    text-shadow: gold 0 0 0.4rem;
 }
