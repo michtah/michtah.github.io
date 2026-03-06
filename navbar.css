@@ -56,16 +56,16 @@ nav a:focus {
 }
 
 nav button {
-    background: #d1892a;
-    background: linear-gradient(0deg, rgba(209, 137, 42, 1) 0%, rgba(255, 210, 87, 1) 71%, rgba(230, 164, 50, 1) 99%);
+    background: #ffc02e;
+    background: linear-gradient(0deg, rgba(255, 192, 46, 1) 0%, rgba(255, 172, 28, 1) 50%, rgba(255, 214, 117, 1) 50%, rgba(255, 205, 79, 1) 100%);
     color: black;
     border: 0px;
     border-radius: 0.2rem;
 }
 
 nav button:hover {
-    background: #704511;
-    background: linear-gradient(0deg, rgba(112, 69, 17, 1) 0%, rgba(186, 143, 24, 1) 71%, rgba(156, 108, 26, 1) 100%);
+    background: #574200;
+    background: linear-gradient(0deg, rgba(87, 66, 0, 1) 0%, rgba(26, 26, 26, 1) 50%, rgba(26, 26, 26, 1) 50%, rgba(140, 105, 0, 1) 100%);
     box-shadow: gold 0 0 0.5rem;
     text-shadow: gold 0 0 0.4rem;
     color: gold;
@@ -74,8 +74,8 @@ nav button:hover {
 }
 
 nav button:active {
-    background: #704511;
-    background: linear-gradient(0deg, rgba(112, 69, 17, 1) 0%, rgba(186, 143, 24, 1) 71%, rgba(156, 108, 26, 1) 100%);
+    background: #574200;
+    background: linear-gradient(0deg, rgba(87, 66, 0, 1) 0%, rgba(26, 26, 26, 1) 50%, rgba(26, 26, 26, 1) 50%, rgba(140, 105, 0, 1) 100%);
     box-shadow: beige 0 0 0.5rem;
     text-shadow: beige 0 0 0.4rem;
     color: white;
@@ -84,16 +84,16 @@ nav button:active {
 }
 
 nav button:disabled {
-    background: #6b583d;
-    background: linear-gradient(0deg, rgba(107, 88, 61, 1) 0%, rgba(156, 135, 78, 1) 71%, rgba(117, 97, 61, 1) 100%);
+    background: #a8905d;
+    background: linear-gradient(0deg, rgba(168, 144, 93, 1) 0%, rgba(145, 131, 74, 1) 50%, rgba(196, 174, 106, 1) 50%, rgba(194, 161, 78, 1) 100%);
     color: black;
     border: 0px;
     border-radius: 0.2rem;
 }
 
 nav button:hover:disabled {
-    background: #6b583d;
-    background: linear-gradient(0deg, rgba(107, 88, 61, 1) 0%, rgba(156, 135, 78, 1) 71%, rgba(117, 97, 61, 1) 100%);
+    background: #a8905d;
+    background: linear-gradient(0deg, rgba(168, 144, 93, 1) 0%, rgba(145, 131, 74, 1) 50%, rgba(196, 174, 106, 1) 50%, rgba(194, 161, 78, 1) 100%);
     color: black;
     box-shadow: none;
     text-shadow: none;
