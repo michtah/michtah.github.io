@@ -1,0 +1,33 @@
+label {
+    color: gold;
+    text-shadow: gold 0 0 0.4rem;
+}
+
+input {
+    background-color: #333333;
+    color: #CCCCCC;
+    font-size: 100%;
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    border: gold 1px solid;
+    box-shadow: gold 0 0 0.4rem;
+}
+
+textarea {
+    background: #333333;
+    color: #CCCCCC;
+    size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    border: gold 1px solid;
+    box-shadow: gold 0 0 0.4rem;
+}
+
+.submit-button {
+    scale: 120%;
+    margin: 0.6rem;
+}

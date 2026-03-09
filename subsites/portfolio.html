@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
     <head>
@@ -108,18 +109,18 @@
         <section id="contact">
             <form id="contact-form">
                 <div>
-                    <label for="name">Your Name</label>
+                    <label for="name">Your Name:</label><br>
                     <input type="text" name="name" id="name" required placeholder="Jane Smith">
                 </div>
                 <div>
-                    <label for="email">Your email</label>
+                    <label for="email">Your email:</label><br>
                     <input type="email" name="email" id="email" required placeholder="jane@example.com">
                 </div>
                 <div>
-                    <label for="message">Message</label>
+                    <label for="message">Message:</label><br>
                     <textarea name="message" id="message" required placeholder="Say hello..." rows="5"></textarea>
                 </div>
-                <button type="submit" id="submit-btn">Send Message</button>
+                <button type="submit" id="submit-btn" class="submit-button">Send Message</button>
                 <p id="form-status"></p>
             </form>
         </section>
