@@ -130,6 +130,8 @@
         const SUPABASE_ANON = "sb_publishable_ghuj0ZCK9J6LbuOdRpPloA_iIWNKv52";
 
         document.getElementById("contact-form").addEventListener("submit", async function (event) {
+            event.preventDefault();
+
             const name = document.getElementById("name").value.trim();
             const email = document.getElementById("email").value.trim();
             const message = document.getElementById("message").value.trim();
@@ -165,7 +167,7 @@
                     status.style.color = "#DC2626";
                 }
             } catch (networkError) {
-                console.error("Nextwork error:", networkError);
+                console.error("Network error:", networkError);
                 status.textContent = "Could not connect. Check your internet connection.";
                 status.style.color = "#DC2626";
             } finally {
