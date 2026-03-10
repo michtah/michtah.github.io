@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="test_js.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Matter Dimensions</h1>
+        <section>
+            <p id="matter">Matter: 10</p>
+            <p id="matterGain">You are gaining 0 matter per second.</p>
+        </section>
+        <section>
+            <p id="dimension1">Dimension 1: 0</p>
+            <button id="button1" onclick="buyDimension(0, 1)">Buy 1</button>
+            <button id="button1buy10" onclick="buyDimension(0, 10)">Buy 10</button>
+        </section>
+        <section>
+            <p id="dimension2">Dimension 2: 0</p>
+            <button id="button2" onclick="buyDimension(1, 1)">Buy 1</button>
+            <button id="button2buy10" onclick="buyDimension(1, 10)">Buy 10</button>
+        </section>
+        <section>
+            <p id="dimension3">Dimension 3: 0</p>
+            <button id="button3" onclick="buyDimension(2, 1)">Buy 1</button>
+            <button id="button3buy10" onclick="buyDimension(2, 10)">Buy 10</button>
+        </section>
+        <section>
+            <p id="dimension4">Dimension 4: 0</p>
+            <button id="button4" onclick="buyDimension(3, 1)">Buy 1</button>
+            <button id="button4buy10" onclick="buyDimension(3, 10)">Buy 10</button>
+        </section>
+        <section>
+            <p id="dimension5">Dimension 5: 0</p>
+            <button id="button5" onclick="buyDimension(4, 1)">Buy 1</button>
+            <button id="button5buy10" onclick="buyDimension(4, 10)">Buy 10</button>
+        </section>
+        <section>
+            <p id="dimension6">Dimension 6: 0</p>
+            <button id="button6" onclick="buyDimension(5, 1)">Buy 1</button>
+            <button id="button6buy10" onclick="buyDimension(5, 10)">Buy 10</button>
+        </section>
+        <section>
+            <p id="dimension7">Dimension 7: 0</p>
+            <button id="button7" onclick="buyDimension(6, 1)">Buy 1</button>
+            <button id="button7buy10" onclick="buyDimension(6, 10)">Buy 10</button>
+        </section>
+        <section>
+            <p id="dimension8">Dimension 8: 0</p>
+            <button id="button8" onclick="buyDimension(7, 1)">Buy 1</button>
+            <button id="button8buy10" onclick="buyDimension(7, 10)">Buy 10</button>
+        </section>
+        <section>
+            <p id="tickspeedGrow">Tick Speed: 1</p>
+            <button id="buttonTickspeed" onclick="buyTickspeed()">Reset matter to boost Tickspeed</button>
+            <p id="buyGrow">Per 10 purchase multiplier: 2.0</p>
+            <button id="buttonPurchaseMultiplier" onclick="buyPurchaseGrowth()">Reset matter to boost per 10 purchase growth</button>
+        </section>
+        <section>
+            <button id="buyMax" onclick="buyMax()">Buy Max</button>
+        </section>
+    </main>
+</body>
+</html>
