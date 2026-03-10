@@ -1,6 +1,6 @@
 label {
-    color: gold;
-    text-shadow: gold 0 0 0.4rem;
+    color: var(--gold-color);
+    text-shadow: var(--gold-color) 0 0 0.4rem;
 }
 
 input {
@@ -9,8 +9,8 @@ input {
     font-size: 100%;
     padding: 0.2rem;
     border-radius: 0.2rem;
-    border: gold 1px solid;
-    box-shadow: gold 0 0 0.4rem;
+    border: var(--gold-color) 1px solid;
+    box-shadow: var(--gold-color) 0 0 0.4rem;
 }
 
 textarea {
@@ -19,13 +19,13 @@ textarea {
     size: 1rem;
     padding: 0.2rem;
     border-radius: 0.2rem;
-    border: gold 1px solid;
-    box-shadow: gold 0 0 0.4rem;
+    border: var(--gold-color) 1px solid;
+    box-shadow: var(--gold-color) 0 0 0.4rem;
 }
 
 hr {
-    color: goldenrod;
-    box-shadow: goldenrod 0 0 0.4rem;
+    color: var(--goldenrod-color);
+    box-shadow: var(--goldenrod-color) 0 0 0.4rem;
 }
 
 .submit-button {

@@ -1,7 +1,9 @@
+@import url(../../colors.css);
+
 nav {
     color: white;
     padding: 0.4rem;
-    box-shadow: var(--gold-color) 0 0 0.2rem;
+    box-shadow: var(--eternity-color) 0 0 0.2rem;
     border: 1px gray;
     margin: 0 0 1rem 0;
     position: fixed;
@@ -27,24 +29,24 @@ nav hr {
 }
 
 nav a {
-    color: var(--gold-color);
+    color: var(--eternity-color-visible);
     text-decoration: none;
-    text-shadow: var(--gold-color) 0 0 0.2rem;
+    text-shadow: var(--eternity-color-visible) 0 0 0.2rem;
 }
 
 nav a:visited {
-    color: var(--gold-color);
+    color: var(--eternity-color-visible);
     text-decoration: none;
-    text-shadow: var(--gold-color) 0 0 0.2rem;
+    text-shadow: var(--eternity-color-visible) 0 0 0.2rem;
 }
 
 nav a:hover {
-    color: var(--goldenrod-color);
+    color: var(--eternity-color-dark);
     text-decoration: underline;
 }
 
 nav a:active {
-    color: cyan;
+    color: var(--eternity-color-dark);
     text-decoration: underline;
     font-weight: bold;
 }
@@ -56,39 +58,40 @@ nav a:focus {
 }
 
 nav button {
-    background: var(--button-background-normal);
+    background: var(--button-background-eternal);
     color: black;
+    text-shadow: var(--eternity-color-light) 0 0 0.2rem;
     border: 0px;
     border-radius: 0.2rem;
 }
 
 nav button:hover {
-    background: var(--button-background-normal-hover);
-    box-shadow: var(--gold-color) 0 0 0.5rem;
-    text-shadow: var(--gold-color) 0 0 0.4rem;
-    color: var(--gold-color);
+    background: var(--button-background-eternal-hover);
+    box-shadow: var(--eternity-color) 0 0 0.5rem;
+    text-shadow: var(--eternity-color) 0 0 0.4rem;
+    color: var(--eternity-color-light);
     border: 0px;
     border-radius: 0.2rem;
 }
 
 nav button:active {
-    background: var(--button-background-normal-hover);
-    box-shadow: beige 0 0 0.5rem;
-    text-shadow: beige 0 0 0.4rem;
+    background: var(--button-background-eternal-hover);
+    box-shadow: var(--eternity-color) 0 0 0.5rem;
+    text-shadow: var(--eternity-color) 0 0 0.4rem;
     color: white;
     border: 0px;
     border-radius: 0.2rem;
 }
 
 nav button:disabled {
-    background: var(--button-background-normal-disabled);
+    background: var(--button-background-eternal-disabled);
     color: black;
     border: 0px;
     border-radius: 0.2rem;
 }
 
 nav button:hover:disabled {
-    background: var(--button-background-normal-disabled);
+    background: var(--button-background-eternal-disabled);
     color: black;
     box-shadow: none;
     text-shadow: none;
