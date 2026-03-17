@@ -121,14 +121,14 @@ li:last-child {
 }
 
 a {
-    color: var(--gold-color);
-    text-shadow: var(--gold-color) 0 0 0.4rem;
+    color: var(--eternity-color-visible);
+    text-shadow: var(--eternity-color) 0 0 0.4rem;
     text-decoration: none;
 }
 
 a:hover {
     color: var(--eternity-color-dark);
-    text-shadow: var(--gold-color) 0 0 0.4rem;
+    text-shadow: var(--eternity-color) 0 0 0.4rem;
     text-decoration: underline;
 }
 
@@ -145,8 +145,8 @@ a:focus {
 }
 
 a:visited {
-    color: var(--gold-color);
-    text-shadow: var(--gold-color) 0 0 0.4rem;
+    color: var(--eternity-color-visible);
+    text-shadow: var(--eternity-color) 0 0 0.4rem;
     text-decoration: none;
 }
 

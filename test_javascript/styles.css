@@ -1,0 +1,137 @@
+/* general style for the whole page */
+* {
+    font-family: 'MonospaceTypewriter', monospace;
+    src: url("/assets/MonospaceTypewriter.ttf");
+    color: #cccccc;
+}
+
+body {
+    background-color: #222222;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* general styles for the game container */
+#game-container {
+    width: 80%;
+    margin: 4rem auto;
+    padding: 1rem;
+    background-color: #333333;
+    color: #cccccc;
+}
+
+/* Style for buttons inside the game container */
+#game-container button {
+    text-align: center;
+    padding: 0.3rem;
+    background-color: #555555;
+    color: #cccccc;
+    border: 1px solid #cccccc;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    margin: 0.2rem;
+}
+
+#game-container button:disabled {
+    background-color: #777777;
+    color: #cccccc;
+    border: 1px solid #aaaaaa;
+    font-weight: normal;
+}
+
+#buy-max-button {
+    width: 100%;
+    margin: auto;
+}
+
+#buy-max-container {
+    width: 30%;
+    margin: auto;
+}
+
+.matter-dimension {
+    margin: 1rem;
+    padding: 0.4rem;
+    background-color: #222222;
+    border: 1px solid #cccccc;
+    border-radius: 0.2rem;
+}
+
+.matter-dimension-text {
+    width: 40%;
+}
+
+#matter-mechanic-container {
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    border: none;
+    border-radius: 0;
+}
+
+.buy1button, .buy10button {
+    margin-top: 0.5rem;
+    margin-right: auto;
+    width: 25%;
+    display: inline-block;
+}
+
+.matter-dimension-text {
+    font-weight: bold;
+    display:inline-block;
+    margin: 0.4rem;
+}
+
+#upgrades-container {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #222222;
+    border: 1px solid #cccccc;
+    border-radius: 0.2rem;
+}
+
+#tickspeed-boost-container, #purchase-boost-container {
+    margin: 0.5rem;
+    padding: 0.4rem;
+}
+
+p {
+    margin: 0;
+}
+
+#matter-display-container {
+    text-align: center;
+    margin: 3rem 0;
+    background-color: #333333;
+}
+
+#matter-amount-display {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: matter-glow 10s infinite;
+}
+
+@keyframes matter-glow {
+    0% {
+        text-shadow: 0 0 0.4rem #80ff00;
+        color: #80ff00;
+    }
+    50% {
+        text-shadow: 0 0 1rem #e8ff3b;
+        color: #e8ff3b;
+    }
+    100% {
+        text-shadow: 0 0 0.4rem #80ff00;
+        color: #80ff00;
+    }
+}
+
+#matter-per-second-display {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #cccccc;
+}
+
+#matter-per-second-amount {
+    font-style: normal;
+}

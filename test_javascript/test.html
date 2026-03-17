@@ -3,65 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matter Dimensions</title>
     <script src="test_js.js"></script>
-    <title>Document</title>
+    <script type="module" src="../break_eternity.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Matter Dimensions.</h1>
+        <p>This is a simple game to demonstrate the use of JavaScript in a web page.</p>
+    </header>
     <main>
-        <h1>Matter Dimensions</h1>
-        <section>
-            <p id="matter">Matter: 10</p>
-            <p id="matterGain">You are gaining 0 matter per second.</p>
-        </section>
-        <section>
-            <p id="dimension1">Dimension 1: 0</p>
-            <button id="button1" onclick="buyDimension(0, 1)">Buy 1</button>
-            <button id="button1buy10" onclick="buyDimension(0, 10)">Buy 10</button>
-        </section>
-        <section>
-            <p id="dimension2">Dimension 2: 0</p>
-            <button id="button2" onclick="buyDimension(1, 1)">Buy 1</button>
-            <button id="button2buy10" onclick="buyDimension(1, 10)">Buy 10</button>
-        </section>
-        <section>
-            <p id="dimension3">Dimension 3: 0</p>
-            <button id="button3" onclick="buyDimension(2, 1)">Buy 1</button>
-            <button id="button3buy10" onclick="buyDimension(2, 10)">Buy 10</button>
-        </section>
-        <section>
-            <p id="dimension4">Dimension 4: 0</p>
-            <button id="button4" onclick="buyDimension(3, 1)">Buy 1</button>
-            <button id="button4buy10" onclick="buyDimension(3, 10)">Buy 10</button>
-        </section>
-        <section>
-            <p id="dimension5">Dimension 5: 0</p>
-            <button id="button5" onclick="buyDimension(4, 1)">Buy 1</button>
-            <button id="button5buy10" onclick="buyDimension(4, 10)">Buy 10</button>
-        </section>
-        <section>
-            <p id="dimension6">Dimension 6: 0</p>
-            <button id="button6" onclick="buyDimension(5, 1)">Buy 1</button>
-            <button id="button6buy10" onclick="buyDimension(5, 10)">Buy 10</button>
-        </section>
-        <section>
-            <p id="dimension7">Dimension 7: 0</p>
-            <button id="button7" onclick="buyDimension(6, 1)">Buy 1</button>
-            <button id="button7buy10" onclick="buyDimension(6, 10)">Buy 10</button>
-        </section>
-        <section>
-            <p id="dimension8">Dimension 8: 0</p>
-            <button id="button8" onclick="buyDimension(7, 1)">Buy 1</button>
-            <button id="button8buy10" onclick="buyDimension(7, 10)">Buy 10</button>
-        </section>
-        <section>
-            <p id="tickspeedGrow">Tick Speed: 1</p>
-            <button id="buttonTickspeed" onclick="buyTickspeed()">Reset matter to boost Tickspeed</button>
-            <p id="buyGrow">Per 10 purchase multiplier: 2.0</p>
-            <button id="buttonPurchaseMultiplier" onclick="buyPurchaseGrowth()">Reset matter to boost per 10 purchase growth</button>
-        </section>
-        <section>
-            <button id="buyMax" onclick="buyMax()">Buy Max</button>
-        </section>
+        <div id="game-container">
+            <div id="matter-mechanic-container">
+                <div id="matter-display-container">
+                    <p id="matter-display">You have <span id="matter-amount-display">10</span> matter.</p>
+                    <p id="matter-per-second-display">You are gaining <span id="matter-per-second-amount">0</span> matter per second.</p>
+                </div> 
+                <div id="matter-dimension-1-container" class="matter-dimension">
+                    <p id="matter-dimension-text-1" class="matter-dimension-text">Matter Dimension 1: 0</p>
+                    <button id="dim1buy1" class="buy1button" onclick="dimensions[0].buyOne()">Buy 1 (Cost: 10)</button>
+                    <button id="dim1buy10" class="buy10button" onclick="dimensions[0].buyTen()">Buy 10 (Cost: 100)</button>
+                </div>
+                <div id="matter-dimension-2-container" class="matter-dimension">
+                    <p id="matter-dimension-text-2" class="matter-dimension-text">Matter Dimension 2: 0</p>
+                    <button id="dim2buy1" class="buy1button" onclick="dimensions[1].buyOne()">Buy 1 (Cost: 10)</button>
+                    <button id="dim2buy10" class="buy10button" onclick="dimensions[1].buyTen()">Buy 10 (Cost: 100)</button>
+                </div>
+                <div id="matter-dimension-3-container" class="matter-dimension">
+                    <p id="matter-dimension-text-3" class="matter-dimension-text">Matter Dimension 3: 0</p>
+                    <button id="dim3buy1" class="buy1button" onclick="dimensions[2].buyOne()">Buy 1 (Cost: 10)</button>
+                    <button id="dim3buy10" class="buy10button" onclick="dimensions[2].buyTen()">Buy 10 (Cost: 100)</button>
+                </div>
+                <div id="matter-dimension-4-container" class="matter-dimension">
+                    <p id="matter-dimension-text-4" class="matter-dimension-text">Matter Dimension 4: 0</p>
+                    <button id="dim4buy1" class="buy1button" onclick="dimensions[3].buyOne()">Buy 1 (Cost: 10)</button>
+                    <button id="dim4buy10" class="buy10button" onclick="dimensions[3].buyTen()">Buy 10 (Cost: 100)</button>
+                </div>
+                <div id="matter-dimension-5-container" class="matter-dimension">
+                    <p id="matter-dimension-text-5" class="matter-dimension-text">Matter Dimension 5: 0</p>
+                    <button id="dim5buy1" class="buy1button" onclick="dimensions[4].buyOne()">Buy 1 (Cost: 10)</button>
+                    <button id="dim5buy10" class="buy10button" onclick="dimensions[4].buyTen()">Buy 10 (Cost: 100)</button>
+                </div>
+                <div id="matter-dimension-6-container" class="matter-dimension">
+                    <p id="matter-dimension-text-6" class="matter-dimension-text">Matter Dimension 6: 0</p>
+                    <button id="dim6buy1" class="buy1button" onclick="dimensions[5].buyOne()">Buy 1 (Cost: 10)</button>
+                    <button id="dim6buy10" class="buy10button" onclick="dimensions[5].buyTen()">Buy 10 (Cost: 100)</button>
+                </div>
+                <div id="matter-dimension-7-container" class="matter-dimension">
+                    <p id="matter-dimension-text-7" class="matter-dimension-text">Matter Dimension 7: 0</p>
+                    <button id="dim7buy1" class="buy1button" onclick="dimensions[6].buyOne()">Buy 1 (Cost: 10)</button>
+                    <button id="dim7buy10" class="buy10button" onclick="dimensions[6].buyTen()">Buy 10 (Cost: 100)</button>
+                </div>
+                <div id="matter-dimension-8-container" class="matter-dimension">
+                    <p id="matter-dimension-text-8" class="matter-dimension-text">Matter Dimension 8: 0</p>
+                    <button id="dim8buy1" class="buy1button" onclick="dimensions[7].buyOne()">Buy 1 (Cost: 10)</button>
+                    <button id="dim8buy10" class="buy10button" onclick="dimensions[7].buyTen()">Buy 10 (Cost: 100)</button>
+                </div>
+                <div id="buy-max-container" class="buy-max">
+                    <button id="buy-max-button" onclick="buyMaxDimensions()">Buy Max</button>
+                </div>
+            </div>
+            <div id="upgrades-container">
+                <div id="tickspeed-boost-container">
+                    <p id="tickspeed-boost-text">Tick Speed Boost: 1x</p>
+                    <button id="tickspeed-boost-button" onclick="boostTickspeed()">Reset Matter to Boost Tickspeed</button>
+                </div>
+                <div id="purchase-boost-container">
+                    <p id="purchase-boost-text">Purchase Boost: 2x</p>
+                    <button id="purchase-boost-button" onclick="boostPurchase()">Reset Matter to Boost Purchase Multiplier</button>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
