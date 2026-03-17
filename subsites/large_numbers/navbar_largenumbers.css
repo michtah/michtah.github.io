@@ -16,11 +16,19 @@ nav {
     color: var(--gold-color);
     font-weight: bold;
     text-shadow: var(--gold-color) 0 0 0.3rem;
+}
 
+#explosive-hazard {
+    width: 1rem;
+    height: 1rem;
+    transform: translateY(0.1rem) translateX(0.1rem);
+    border-radius: 0.5rem;
+    margin-top: 0;
+    box-shadow: var(--gold-color) 0 0 0.3rem;
 }
 
 nav p {
-    margin: 0rem;
+    margin: 0;
 }
 
 nav hr {
