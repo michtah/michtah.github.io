@@ -1,20 +1,101 @@
 :root {
-    --infinity-color: rgba(182, 127, 51, 1.0);
-    --eternity-color: rgb(179, 65, 224);
-    --eternity-color-transparent: rgb(179, 65, 224, 0.05);
-    --eternity-color-dark: rgb(147, 27, 226);
-    --eternity-color-light: rgb(230, 181, 255);
-    --eternity-color-visible: rgb(204, 76, 255);
-    --reality-color: rgba(27, 187, 54, 1.0);
-    --gold-color: rgba(255, 215, 0, 1.0);
-    --goldenrod-color: rgba(218, 165, 32, 1.0);
-    --gold-color-light: beige;
+	color-scheme: light;
+	
+	/* buttons */
+	--g-button: linear-gradient(180deg,rgba(255, 205, 87, 1) 0%, rgba(255, 227, 125, 1) 50%, rgba(255, 161, 10, 1) 50%, rgba(255, 183, 15, 1) 100%);
+	--g-button-hover: linear-gradient(180deg,rgba(130, 91, 0, 1) 0%, rgba(48, 28, 0, 1) 50%, rgba(48, 28, 0, 1) 50%, rgba(120, 84, 0, 1) 100%);
+	--g-button-active: linear-gradient(180deg,rgba(255, 243, 214, 1) 0%, rgba(255, 212, 112, 1) 50%, rgba(255, 212, 112, 1) 50%, rgba(255, 245, 222, 1) 100%);
+	--g-button-focus: linear-gradient(180deg,rgba(214, 255, 241, 1) 0%, rgba(255, 212, 112, 1) 50%, rgba(255, 212, 112, 1) 50%, rgba(222, 255, 243, 1) 100%);
+	--g-button-disabled: linear-gradient(180deg,rgba(171, 133, 68, 1) 0%, rgba(186, 157, 89, 1) 50%, rgba(128, 98, 45, 1) 50%, rgba(179, 134, 61, 1) 100%);
+	--g-headings-d: linear-gradient(180deg,rgba(36, 70, 105, 1) 0%, rgba(46, 46, 46, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 12, 66, 1) 100%);
 
-    --button-background-normal: linear-gradient(0deg, rgba(255, 192, 46, 1) 0%, rgba(255, 172, 28, 1) 50%, rgba(255, 214, 117, 1) 50%, rgba(255, 205, 79, 1) 100%);
-    --button-background-normal-hover: linear-gradient(0deg, rgba(87, 66, 0, 1) 0%, rgba(26, 26, 26, 1) 50%, rgba(26, 26, 26, 1) 50%, rgba(140, 105, 0, 1) 100%);
-    --button-background-normal-disabled: linear-gradient(0deg, rgba(168, 144, 93, 1) 0%, rgba(145, 131, 74, 1) 50%, rgba(196, 174, 106, 1) 50%, rgba(194, 161, 78, 1) 100%);
-    
-    --button-background-eternal: linear-gradient(180deg,rgba(208, 92, 247, 1) 0%, rgba(218, 105, 250, 1) 50%, rgba(189, 0, 222, 1) 50%, rgba(204, 31, 242, 1) 100%);
-    --button-background-eternal-hover: linear-gradient(180deg,rgba(102, 0, 143, 1) 0%, rgba(26, 0, 36, 1) 50%, rgba(40, 0, 59, 1) 50%, rgba(91, 0, 130, 1) 100%);
-    --button-background-eternal-disabled: linear-gradient(180deg, rgba(144, 119, 153, 1) 0%, rgba(151, 125, 158, 1) 50%, rgba(111, 90, 120, 1) 50%, rgba(86, 63, 94, 1) 100%);
+	--g-button-eternal: linear-gradient(180deg,rgba(195, 88, 237, 1) 0%, rgba(212, 124, 247, 1) 50%, rgba(162, 38, 212, 1) 50%, rgba(169, 48, 217, 1) 100%);
+	--g-button-hover-eternal: linear-gradient(180deg,rgba(135, 0, 189, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(132, 0, 184, 1) 100%);
+	--g-button-active-eternal: linear-gradient(180deg,rgba(242, 207, 255, 1) 0%, rgba(219, 120, 255, 1) 50%, rgba(219, 120, 255, 1) 50%, rgba(241, 201, 255, 1) 100%);
+	--g-button-focus-eternal: linear-gradient(180deg,rgba(207, 253, 255, 1) 0%, rgba(219, 120, 255, 1) 50%, rgba(219, 120, 255, 1) 50%, rgba(201, 251, 255, 1) 100%);
+	--g-button-disabled-eternal: linear-gradient(180deg,rgba(127, 92, 145, 1) 0%, rgba(142, 96, 156, 1) 50%, rgba(104, 74, 117, 1) 50%, rgba(116, 82, 130, 1) 100%);
+	--g-headings-eternal-d: linear-gradient(180deg,rgba(71, 82, 21, 1) 0%, rgba(43, 43, 43, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(50, 64, 0, 1) 100%);
+
+	/* main colours */
+	--c-background-d: #141426;
+	--c-text-d: #EAEAEA;
+	
+	--c-background-eternal-d: #242710;
+	--c-text-eternal-d: #EAEAEA;
+	
+	/* theming colours */
+	--c-gold-d: #FFCF4C;
+	--c-gold-dark-d: #E59C16;
+	--c-gold-vivid-d: #FFB600;
+	--c-gold-light-d: #FFE093;
+
+	--c-eternity-d: #B341E0;
+	--c-eternity-dark-d: #6D0099;
+	--c-eternity-vivid-d: #C535FF;
+	--c-eternity-light-d: #E6A8FF;
+
+	--c-infinity-d: #B67F33;
+	--c-infinity-dark-d: #8E5305;
+	--c-infinity-vivid-d: #FF9000;
+	--c-infinity-light-d: #E8B36F;
+
+	--c-reality-d: #0BA00E;
+	--c-reality-dark-d: #065607;
+	--c-reality-vivid-d: #10E813;
+	--c-reality-light-d: #6BF46D;
+
+	/* main colours */
+	--c-background-l: #EAEAEA;
+	--c-text-l: #1b1b35;
+
+	--c-background-eternal-l: #EAEAEA;
+	--c-text-eternal-l: #232710;
+
+	/* theming colours */
+	--c-gold-l: #BC8C14;
+	--c-gold-dark-l: #F4C75D;
+	--c-gold-vivid-l: #DB9900;
+	--c-gold-light-l: #A36700;
+
+	--c-eternity-l: #8921B2;
+	--c-eternity-dark-l: #C98AE2;
+	--c-eternity-vivid-l: #A800EA;
+	--c-eternity-light-l: #520075;
+
+	--c-infinity-l: #B67F33;
+	--c-infinity-dark-l: #D8A25B;
+	--c-infinity-vivid-l: #FF9000;
+	--c-infinity-light-l: #754200;
+
+	--c-reality-l: #087C0A;
+	--c-reality-dark-l: #45D847;
+	--c-reality-vivid-l: #0DBF10;
+	--c-reality-light-l: #116D13;
+
+    /* combining colors */
+    --c-background: light-dark( var(--c-background-l), var(--c-background-d) );
+    --c-text: light-dark( var(--c-text-l), var(--c-text-d));
+
+    --c-background-eternal: light-dark( var(--c-background-eternal-l), var(--c-background-eternal-d));
+    --c-text-eternal: light-dark(var(--c-background-eternal-l), var(--c-background-eternal-d));
+
+    --c-gold: light-dark(var(--c-gold-l), var(--c-gold-d));
+    --c-gold-dark: light-dark(var(--c-gold-dark-l),var(--c-gold-dark-d));
+    --c-gold-vivid: light-dark(var(--c-gold-vivid-l), var(--c-gold-vivid-d));
+    --c-gold-light: light-dark(var(--c-gold-light-l), var(--c-gold-light-d));
+
+	--c-eternity: light-dark(var(--c-eternity-l), var(--c-eternity-d));
+	--c-eternity-dark: light-dark(var(--c-eternity-dark-l), var(--c-eternity-dark-d));
+	--c-eternity-vivid: light-dark(var(--c-eternity-vivid-l), var(--c-eternity-vivid-d));
+	--c-eternity-light: light-dark(var(--c-eternity-light-l), var(--c-eternity-light-d));
+
+	--c-infinity: light-dark(var(--c-infinity-l), var(--c-infinity-d));
+	--c-infinity-dark: light-dark(var(--c-infinity-dark-l), var(--c-infinity-dark-d));
+	--c-infinity-vivid: light-dark(var(--c-infinity-vivid-l), var(--c-infinity-vivid-d));
+	--c-infinity-light: light-dark(var(--c-infinity-light-l), var(--c-infinity-light-d));
+
+	--c-reality: light-dark(var(--c-reality-l), var(--c-reality-d));
+	--c-reality-dark: light-dark(var(--c-reality-dark-l), var(--c-reality-dark-d));
+	--c-reality-vivid: light-dark(var(--c-reality-vivid-l), var(--c-reality-vivid-d));
+	--c-reality-light: light-dark(var(--c-reality-light-l), var(--c-reality-light-d));
 }
