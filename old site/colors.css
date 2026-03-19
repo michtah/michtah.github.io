@@ -1,5 +1,5 @@
 :root {
-	color-scheme: light;
+	color-scheme: dark;
 	
 	/* buttons */
 	--g-button: linear-gradient(180deg,rgba(255, 205, 87, 1) 0%, rgba(255, 227, 125, 1) 50%, rgba(255, 161, 10, 1) 50%, rgba(255, 183, 15, 1) 100%);
