@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/common.css">
+    <script src="/index.js"></script>
+    <title>Michtah: Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="page-navigation">
+            <p>
+                <span class="gold-color">Michtah:</span> <a href="/index.html">Main</a> &#47; <span class="gold-color-light">Portfolio</span>
+            </p>
+        </div>
+        <div class="theming-buttons">
+            <button id="light-dark-button"onclick="lightMode()">Turn Light</button>
+            <button id="glow-button" class="glow-button" onclick="blurMode()">Remove Glow</button>
+        </div>
+    </header>
+    <main>
+        <h1>About Me</h1>
+        <section>
+            <p>
+                I am Michael Tahiroğlu. I am studying Computer Science in the University of York as an International Year One student.
+            </p>
+            <p>
+                I'm mainly interested in computation for simulations and mathematics, as well as graphic design and programming. I want to write code that helps us understand our world.
+            </p>
+        </section>
+        <h2>Skills</h2>
+        <section>
+            <p>
+                <span class="gold-color">Programming:</span> I have intermediate knowledge in Python, Java, and C. I also know some GLSL, APL, and NASM. Furthermore I can also use HTML/CSS/JS. I was part of the Computer Science Olympiad of Turkey for two years.
+            </p>
+            <p>
+                <span class="gold-color">Spoken Languages:</span> I am a native in Turkish, but better in spoken Turkish with some good technical vocabulary in Mathematics. I also speak English as a second language. I have an IELTS score of 8.5 and a C1 CEFR band. I have a wider vocabulary in English, especially for technical terms. Beyond those two I know a bit of German and Finnish.
+            </p>
+            <p>
+                <span class="gold-color">Personal Interests:</span> I have been drawing for six years now. Digitally I use Krita to draw. I also like mathematics, especially logic and set theory. I also make some experimental electronic music from time to time.
+            </p>
+        </section>
+        <h2>Projects</h2>
+        <section class="project-section">
+            <div class="project-container">
+                <h3 class="project-heading">River Pathfinder</h3>
+                <p>
+                    This tool finds the likely flow of rivers from a given heightmap. It utilises the Pillow image library and pathfinding to achieve this goal.
+                </p>
+                <a href="https://github.com/michtah/river-pathfinder" target="_blank">
+                    <button class="project-button">Github Repository</button>
+                </a>
+            </div>
+            <div class="project-container">
+                <i>To be added...</i>
+            </div>
+            <div class="project-container">
+                <i>To be added...</i>
+            </div>
+        </section>
+        <h2>Production Diary</h2>
+        <section>
+            <a href="/production_diary/pd_index.html"><button>View the production diary</button></a>
+        </section>
+        <h2>Contact</h2>
+        <section>
+            <a href="https://github.com/michtah"><button>Github</button></a>
+            <a href="https://gravatar.com/agiledelectablye48da15edf"><button>Gravatar</button></a>
+        </section>
+        <hr>
+        <section id="contact">
+            <form id="contact-form">
+                <div>
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" name="name" id="name" required placeholder="Jane Smith">
+                </div>
+                <div>
+                    <label for="email">Your email:</label><br>
+                    <input type="email" name="email" id="email" required placeholder="jane@example.com">
+                </div>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message" required placeholder="Say hello..." rows="5"></textarea>
+                </div>
+                <button type="submit" id="submit-btn" class="submit-button">Send Message</button>
+                <p id="form-status"></p>
+            </form>
+    </main>
+    <script src="/submit_form.js"></script>
+</body>
+</html>
