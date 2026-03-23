@@ -114,6 +114,24 @@ div {
     margin: 0.1rem;
 }
 
+div {
+    margin: 0%;
+    padding: 0%;
+}
+
+.page-navigation {
+    font-size: 110%;
+    margin-left: 1%;
+    text-shadow: var(--glow-style);
+}
+
+.theming-buttons {
+    display: flex;
+    width:20%;
+    flex-direction: row;
+    margin: 0.1rem;
+}
+
 main {
     width: 70%;
     padding: 3%;
