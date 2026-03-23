@@ -9,8 +9,8 @@
     --button-color: #42455b;
     --button-border-color: #5e617b;
     
-    --golden-color: #e59e10;
-    --golden-color-dark: #b67205;
+    --golden-color: #ffbb32;
+    --golden-color-dark: #d68f1b;
 }
 
 .light-theme {
@@ -51,11 +51,32 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 74%;
     padding: 1%;
     margin: auto;
     border: var(--background-border) 1px solid;
     background-color: var(--background-color);
+}
+
+div {
+    margin: 0%;
+    padding: 0%;
+}
+
+.page-navigation {
+    font-size: 110%;
+    margin-left: 1%;
+    text-shadow: var(--glow-style);
+}
+
+.theming-buttons {
+    display: flex;
+    width:20%;
+    flex-direction: row;
+    margin: 0.1rem;
 }
 
 main {
@@ -76,6 +97,10 @@ hr {
     margin-bottom: 2rem;
 }
 
+li {
+    margin: 1rem 0;
+}
+
 button {
     font-family: 'Cousine', monospace;
     background-color: var(--button-color);
@@ -86,4 +111,12 @@ button {
 
 .glow-button {
     text-shadow: var(--glow-style);
+}
+
+#light-dark-button, #glow-button {
+    width:40%;
+    margin-left: 1rem;
+    font-size: 110%;
+    line-height: 100%;
+    text-align: center;
 }
