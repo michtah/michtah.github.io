@@ -268,3 +268,7 @@ input, textarea {
     display: flex;
     justify-content: space-between;
 }
+
+img {
+    border: 1px solid var(--regular-border);
+}
