@@ -3,50 +3,50 @@
 
 :root {
     --glow-style: currentcolor 0 0 0.6rem;
-    --back-background-color: #202128;
-    --background-color: #232534;
-    --text-color: #c4cdde;
-    --background-border: #3a3c50;
+    --back-background-color: hsl(40, 11%, 14%);
+    --background-color: hsl(40, 20%, 17%);
+    --text-color: hsl(40, 28%, 82%);
+    --background-border: hsl(40, 16%, 27%);
 
-    --regular-border: #54566d;
-    --regular-container: #303244;
+    --regular-border: hsl(40, 13%, 38%);
+    --regular-container: hsl(40, 17%, 23%);
 
-    --button-color: #42455b;
-    --button-color-hover: #61647f;
-    --button-color-active: #2c2f42;
-    --button-color-disabled: #202232;
-    --button-border-color: #5e617b;
+    --button-color: hsl(40, 16%, 31%);
+    --button-color-hover: hsl(40, 13%, 44%);
+    --button-color-active: hsl(40, 20%, 22%);
+    --button-color-disabled: hsl(40, 22%, 16%);
+    --button-border-color: hsl(40, 13%, 43%);
     
-    --golden-color: #ffbb32;
-    --golden-color-dark: #d68f1b;
-    --golden-color-light: #ffed77;
+    --highlight-color: hsl(283, 90%, 64%);
+    --highlight-color-dark: hsl(283, 64%, 51%);
+    --highlight-color-light: hsl(283, 100%, 76%);
 
-    --eternity-color: #B341E0;
+    --eternity-color: hsl(283, 72%, 57%);
 
     --blue-color: #1e93d7;
 }
 
 .light-theme {
     --glow-style: color-mix(in srgb, currentcolor 40%, transparent) 0 0 0.6rem;
-    --back-background-color: #b8bbcc;
-    --background-color: #d5d7e6;
-    --text-color: #3f435a;
-    --background-border: #8587a4;
+    --back-background-color: hsl(40, 16%, 76%);
+    --background-color: hsl(40, 25%, 87%);
+    --text-color: hsl(40, 18%, 30%);
+    --background-border: hsl(40, 15%, 58%);
 
-    --regular-border: #999bb8;
-    --regular-container: #cdcfe4;
+    --regular-border: hsl(40, 18%, 66%);
+    --regular-container: hsl(40, 30%, 85%);
 
-    --button-color: #aeb1c6;
-    --button-color-hover: #d1d3e3;
-    --button-color-active: #868aa3;
-    --button-color-disabled: #616378;
-    --button-border-color: #8c8fa8;
+    --button-color: hsl(40, 17%, 73%);
+    --button-color-hover: hsl(40, 24%, 85%);
+    --button-color-active: hsl(40, 14%, 58%);
+    --button-color-disabled: hsl(40, 11%, 43%);
+    --button-border-color: hsl(40, 14%, 60%);
 
-    --golden-color: #9e5f00;
-    --golden-color-dark:#613713;
-    --golden-color-light: #5d3800;
+    --highlight-color: hsl(283, 66%, 41%);
+    --highlight-color-dark:hsl(283, 69%, 60%);
+    --highlight-color-light: hsl(283, 78%, 26%);
 
-    --eternity-color: #8623ad;
+    --eternity-color: hsl(283, 66%, 41%);
 
     --blue-color: #0e6da3;
 }
@@ -56,17 +56,17 @@
 }
 
 .highlight-color {
-    color: var(--golden-color);
+    color: var(--highlight-color);
     text-shadow: var(--glow-style);
 }
 
 .highlight-color-dark {
-    color: var(--golden-color-dark);
+    color: var(--highlight-color-dark);
     text-shadow: var(--glow-style);
 }
 
 .highlight-color-light {
-    color: var(--golden-color-light);
+    color: var(--highlight-color-light);
     text-shadow: var(--glow-style);
 }
 
@@ -89,8 +89,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75.6%;
-    padding: 0.3rem;
+    width: 74%;
+    padding: 1%;
     margin: auto;
     border: var(--background-border) 1px solid;
     background-color: var(--background-color);
@@ -142,9 +142,9 @@ main {
 }
 
 h1, h2, h3 {
-    color: var(--golden-color);
+    color: var(--highlight-color);
     text-shadow: var(--glow-style);
-    border-bottom: var(--golden-color) 2px dashed;
+    border-bottom: var(--highlight-color) 2px dashed;
 }
 
 hr {
@@ -195,12 +195,12 @@ button:focus {
 }
 
 a {
-    color: var(--golden-color);
+    color: var(--highlight-color);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--golden-color-light);
+    color: var(--highlight-color-light);
     text-decoration: underline;
 }
 
@@ -209,7 +209,7 @@ a:active {
 }
 
 a:visited {
-    color: var(--golden-color);
+    color: var(--highlight-color);
 }
 
 a:focus {
@@ -240,12 +240,12 @@ a:focus {
 
 .project-button {
     font-size: 100%;
-    border: var(--golden-color) 1px solid;
-    color: var(--golden-color);
+    border: var(--highlight-color) 1px solid;
+    color: var(--highlight-color);
 }
 
 hr {
-    color: var(--golden-color-dark);
+    color: var(--highlight-color-dark);
     margin: 1rem 0;
 }
 

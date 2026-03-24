@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LN: Traditional Large Numbers</title>
+    <link rel="stylesheet" href="/large_numbers/common.css">
+    <script src="/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="page-navigation">
+            <p>
+                <span class="highlight-color">Michtah:</span> <a href="/index.html">Main</a> &#47; <a href="/large_numbers/ln_index.html">Large Numbers</a> &#47; <span class="highlight-color-light">1 - Traditional Large Numbers</span>
+            </p>
+        </div>
+        <div class="theming-buttons">
+            <button id="light-dark-button"onclick="lightMode()">Turn Light</button>
+            <button id="glow-button" class="glow-button" onclick="blurMode()">Remove Glow</button>
+        </div>
+    </header>
+    <main>
+        <h1>Large Numbers 1: Traditional Large Numbers</h1>
+        <section>
+            <p>
+                Welcome to the actual meat of the page! This is the first part of the series where we will talk about some traditional types of large numbers before we dive into the more interesting stuff.
+            </p>
+            <p>
+                As someone who has been interested in this topic for many years now, one thing that you start to notice is that you lose scale of just how tremendously large the numbers you work with are. The mind cannot comprehends numbers much larger than even just a trillion - 10<sup>12</sup>, before it fails to even get what you're saying. In fact, the failings of the mind appear at around a million - 10<sup>6</sup>, I'd argue, as I can't really <em>see</em> more than a million things in my mind. Even then, the visual is quite blurry. Asking someone to imagine four squares and five squares is easy, asking someone to imagine a million squares and a million and one squares is downright ridiculous.
+            </p>
+            <p>
+                The most interesting term to come out of the perceptions on numbers is <em>Subitisation</em>. This is our inherent ability to distinguish between numbers. Not the ability to read it and understand the difference, but to be able to reflexively, immediately grasp that there is a difference. Subitisation only really happens for quantities less than seven. I can personally attest to this, as I struggle to clearly see a picture of nine <em>anything</em> but I tend to do a lot better if the number is less than seven. Try this out and see if it is the same for you.
+            </p>
+        </section>
+        <h2>Munafo's number classes</h2>
+        <section>
+            <p>
+                This leads to an interesting classification of numbers by magnitude. First discovered by Robert Munafo, this method thinks about the different ways in which we can mentally chunk numbers. The first class, Class 0, are numbers that we can directly subitise in our heads and perceive them directly.
+            </p>
+            <p>
+                Class 1 numbers are numbers we can perceive in a scene. In a sense we can think of them like numbers whose number of digits (rough magintude) can easily be subitised. This places them as values between 6 and 10<sup>6</sup>. Class 2 numbers are numbers whose rough magnitude can be roughly subitised. In a sense, their number of digits is a Class 1 number. This places them between 10^6 and 10^10^6
+            </p>
+            <p>
+                (Note: in this series, I will often use the carat symbol "^" for exponentiation. Furthermore, we assume we go from right to left)
+            </p>
+            <p>
+                And we continue. Class 3 numbers are between 10^10^6 and 10^10^10^6. These classes will serve as a basic benchmark for the smaller numbers we will first look at.
+            </p>
+        </section>
+        <section class="bottom-navigation">
+            <a href="/large_numbers/ln_toc.html"><button>Table of Contents &lt;</button></a>
+            <!-- I would avoid inline styling but come on it's ONE styling -->
+            <a href="/large_numbers/ln_1.html"><button disabled>&gt; 2 - To be added...</button></a>
+        </section>
+    </main>
+</body>
+</html>
