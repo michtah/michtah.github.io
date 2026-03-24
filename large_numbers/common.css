@@ -242,6 +242,11 @@ a:focus {
     font-size: 100%;
     border: var(--highlight-color) 1px solid;
     color: var(--highlight-color);
+    align-self: flex-end;
+}
+
+.project-img {
+    display: flex;
 }
 
 hr {
