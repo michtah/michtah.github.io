@@ -89,7 +89,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 74%;
+    width: 100%;
     padding: 1%;
     margin: auto;
     border: var(--background-border) 1px solid;
@@ -114,26 +114,7 @@ div {
     margin: 0.1rem;
 }
 
-div {
-    margin: 0%;
-    padding: 0%;
-}
-
-.page-navigation {
-    font-size: 110%;
-    margin-left: 1%;
-    text-shadow: var(--glow-style);
-}
-
-.theming-buttons {
-    display: flex;
-    width:20%;
-    flex-direction: row;
-    margin: 0.1rem;
-}
-
 main {
-    width: 70%;
     padding: 3%;
     margin: 2rem auto;
     border: var(--background-border) 1px solid;
