@@ -209,7 +209,6 @@ a:focus {
 
 .project-section {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
 }
@@ -252,4 +251,61 @@ input, textarea {
 
 img {
     border: 1px solid var(--regular-border);
+}
+
+/* Tablet and smaller */
+@media (max-width: 1280px) {
+    .project-section {
+        flex-direction: column;
+    }
+
+    .project-container {
+        width: auto;
+    }
+
+    .bottom-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .theming-buttons {
+        width: 100%;
+    }
+
+    #light-dark-button, #glow-button {
+        width: 48%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+    body {
+        font-size: 100%;
+        padding: 0.5%;
+    }
+
+    main {
+        padding: 2%;
+        margin: 1rem auto;
+    }
+
+    .page-navigation {
+        font-size: 100%;
+    }
+
+    #light-dark-button, #glow-button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .theming-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
